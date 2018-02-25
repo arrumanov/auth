@@ -1,0 +1,11 @@
+C:\Мои работы\nodejs_aspnetcore\appnetcore\WebApp\WebApp\bin\Debug\netcoreapp2.0\WebApp.deps.json
+C:\Мои работы\nodejs_aspnetcore\appnetcore\WebApp\WebApp\bin\Debug\netcoreapp2.0\WebApp.runtimeconfig.json
+C:\Мои работы\nodejs_aspnetcore\appnetcore\WebApp\WebApp\bin\Debug\netcoreapp2.0\WebApp.runtimeconfig.dev.json
+C:\Мои работы\nodejs_aspnetcore\appnetcore\WebApp\WebApp\bin\Debug\netcoreapp2.0\WebApp.dll
+C:\Мои работы\nodejs_aspnetcore\appnetcore\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.csprojResolveAssemblyReference.cache
+C:\Мои работы\nodejs_aspnetcore\appnetcore\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.csproj.CoreCompileInputs.cache
+C:\Мои работы\nodejs_aspnetcore\appnetcore\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.AssemblyInfoInputs.cache
+C:\Мои работы\nodejs_aspnetcore\appnetcore\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.AssemblyInfo.cs
+C:\Мои работы\nodejs_aspnetcore\appnetcore\WebApp\WebApp\bin\Debug\netcoreapp2.0\WebApp.pdb
+C:\Мои работы\nodejs_aspnetcore\appnetcore\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.dll
+C:\Мои работы\nodejs_aspnetcore\appnetcore\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.pdb
