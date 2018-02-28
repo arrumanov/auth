@@ -44,7 +44,8 @@ namespace WebApp
             app.UseDefaultFiles();
             app.UseStaticFiles();
 
-            app.UseCors(builder => builder.AllowAnyOrigin());
+            //установка доступа из других доменов
+            app.UseCors(builder => builder.WithOrigins("http://localhost:3000"));
             app.UseAuthentication();
             app.UseMvc();
         }

@@ -11,6 +11,12 @@
 <script>
 import Axios from 'axios'
 
+const MAIN_URL = "http://localhost:3000";
+
+var getToken = function(context){
+  return context.$cookie.get('token');
+}
+
 export default {
   name: 'app',
   data () {
@@ -20,7 +26,7 @@ export default {
   },
   methods: {
     getToken () {
-        Axios.get('http://localhost:3000/'
+        Axios.get(`${MAIN_URL}/`
         ).then(({data}) => {
           this.msg = data;
           this.$cookie.set('token', data, '1D')
@@ -31,9 +37,8 @@ export default {
       },
 
     getValue () {
-        let token = this.$cookie.get('token')
-        Axios.post('http://localhost:3000/value',
-        {params: { token: this.$cookie.get('token') }}
+        let token = getToken(this);
+        Axios.post(`${MAIN_URL}/value`, {token: token}
         ).then(({data}) => {
           this.msg = data;
           console.log(data);
@@ -43,7 +48,8 @@ export default {
       },
 
       getAllProducts () {
-        Axios.get('http://localhost:3000/allproducts'
+        let token = getToken(this);
+        Axios.post(`${MAIN_URL}/allproducts`, {token: token}
         ).then(({data}) => {
           this.msg = data;
           console.log(data);
@@ -53,7 +59,8 @@ export default {
       },
 
       getProductById () {
-        Axios.get('http://localhost:3000/productbyid'
+        let token = getToken(this);
+        Axios.post(`${MAIN_URL}/productbyid`, {token: token}
         ).then(({data}) => {
           this.msg = data;
           console.log(data);
@@ -73,23 +80,5 @@ export default {
   text-align: center;
   color: #2c2e50;
   margin-top: 60px;
-}
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
 }
 </style>
